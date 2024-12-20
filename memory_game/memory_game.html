@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Card Game</title>
+    <link rel="stylesheet" href="memory_style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+    crossorigin="anonymous"></script>
+    <script src="memory_script.js" defer></script>
+</head>
+<body>
+    <div class="controls">
+        <label for="card-count">Escull el nombre de cartes:</label>
+        <select id="card-count">
+            <option value="8">8 cartes</option>
+            <option value="12">12 cartes</option>
+            <option value="16" selected>16 cartes</option>
+        </select>
+    </div>
+    <div class="info">
+        <p>Temps: <span id="timer">00:00</span></p>
+        <p>Moviments: <span id="moves-counter">0</span></p>
+    </div>
+    <div class="memory-board"></div>
+</body>
+</html>
