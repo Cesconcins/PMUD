@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8" />
+  <title>Conversor d'Unitats</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Conversor d'Unitats</h1>
+  <div id="app">
+    <form id="formulari-conversio">
+      <input type="number" id="valor" placeholder="Valor a convertir" required />
+      <select id="tipus-conversio">
+        <option value="longitud">Longitud</option>
+        <option value="massa">Massa</option>
+        <option value="temperatura">Temperatura</option>
+      </select>
+      <select id="unitat-origen"></select>
+      <select id="unitat-desti"></select>
+      <button type="submit">Convertir</button>
+    </form>
+    <p id="resultat"></p>
+  </div>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
