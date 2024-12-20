@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="styles.css">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Francesco Oncins</title>
+</head>
+<body>
+    <header>
+        <h1 class="titol">Portfolio</h1>
+        <img src="logo.jpeg" alt="Guy playing rugby">
+    </header>
+    
+    <menu>
+        <h2>MENU</h2>
+        <nav>
+            <ol>
+                <li><a href='#art1'>Studies and Work</a></li>
+                <li><a href='#art2'>Skills</a></li>
+                <li><a href='#art3'>Sports</a></li>
+                <li><a href='#art4'>Hobbies</a></li>
+            </ol>
+        </nav>
+    </menu>
+    
+    <article id="art1">
+        <h1 class="titol">Studies and Work</h1>
+        <section class="studies">
+            <p>Els estudis que tinc completats són molt bàsics, fins ara he completat l'educació obligatòria i el batxillerat tecnològic.</p>
+            <p>Tot i així aquest curs hauria d'obtenir el grau en enginyeria informàtica.</p>
+            <p>Els crèdits que em falten són d'un parell d'optatives, un altre parell d'assignatures obligatòries, pràctiques i el TFG </p>
+        </section>
+        
+        <section class="work">
+            <p>El meu historial de feina no és massa extèns:</p>
+            <p>La meva primera feina va ser l'estiu del <strong>2022</strong> com a cambrer en un restaurant Mexicà de Badalona, només caps de setmana.</p>
+            <p>Seguidament vaig estar tot l'any <strong>2022-2023</strong> fent de professor particular de matemàtiques a un noi de 4t d'ESO, i vaig aconseguir que aprovés els diferents exàmens que va tenir</p>
+            <p>L'estiu del <strong>2023</strong> vaig tornar a treballar com a cambrer al restaurant mexicà <em>Mexclat</em>, però aquest cop també els dies entre setmana.</p>
+            <p>Per últim, aquest juny <strong>2024</strong> vaig començar a treballar com a cambrer de bodes en un Mas de Vilanova del Vallès, però ara que ha tornat a començar la universitat només treballo algun cap de setmana puntual</p>
+            <p>Encara que tingui feina, estic buscant pràctiques, tinc una entrevista aquest dijous per entrar a <em>Hewlett-Packard</em> (HP)</p>
+        </section>
+    </article>
+    
+    <article id="art2">
+        <h1 class="titol">Skills</h1>
+            <tr>
+                <th>Llenguatges de programació</th>
+                <td>C++</td>
+                <td>Python</td>
+                <td>Java</td>
+                <td>Javascript</td>
+                <td>Erlang</td>
+                <td>Html</td>
+                <td>React</td>
+            </tr>
+            <tr>
+                <th>Sistemes operatius</th>
+                <td>Linux</td>
+                <td>Windows</td>
+            </tr>
+            <tr>
+                <th>Bases de dades</th>
+                <td>MySQL</td>
+                <td>PostgreSQL</td>
+                <td>SQLite</td>
+                <td>MongoDB</td>
+            </tr>
+            <tr>
+                <th>Eines</th>
+                <td>Visual Studio</td>
+                <td>Arduino IDE</td>
+                <td>Apache NeatBeans</td>
+                <td>Wireshark</td>
+                <td>Oracle VirtualBox</td>
+            </tr>
+            <tr>
+                <th>Llengües</th>
+                <td>Català</td>
+                <td>Italià</td>
+                <td>Castellà</td>
+                <td>Anglès</td>
+            </tr>
+        </table>
+    </article>
+    
+    <article id="art3">
+        <h1 class="titol">Sports</h1>
+        <p>Els esports m'apassionen, no podria viure sense ells, sovint m'agrada anar a correr i vaig al gimnàs uns 3 cops per setmana, però l'esport que per mi és especial és el rugby, l'esport jugo.</p>
+        <p>Vaig començar a jugar-hi amb 8 anys, però com que en aquell moment volia provar diferents esports, em vaig desapuntar i vaig anar a pràcticar Hoquei, on no vaig durar ni un mes.</p>
+        <p>Després de passar per esports com bàsquet, fútbol, natació, waterpolo o atletisme vaig adonar-me que el meu esport era el rugby, i em vaig tornar a apuntar amb 13 anys al Badalona, un club diferent que el del principi, però on tenia cosins, pare i tiet jugan't-hi.</p>
+        <p>En aquest club vaig estar-hi fins el 2022, és a dir 7 anys. Llavors el meu tiet va parlar amb mi i em va oferir la opció que anés a provar a un dels millors clubs d'Espanya, la Santboiana. Allà jugaria a la categoria de sub-23 i a una competició nacional. Així que un cop acabat l'estiu vaig dirigir-me a Sant Boi per provar a veure que tal aquest club, del que tant havia sentit a parlar.</p>
+        <p>Ara començo el 3r any en aquest club, l'últim de sub 23, però vull seguir creixent i arribar a l'equip sènior, un equip amb jugadors professionals, alguns dels quals han competit amb les respectives nacions, com Argentina, Chile o Espanya.</p>
+
+        <video controls width="360" height="240">
+            <source src="video_rugby.mp4" type="video/mp4" />
+            Your browser does not support the video element.
+        </video>
+    </article>
+    
+    <article id="art4">
+        <h1 class="titol">Hobbies</h1>
+        <ul>
+            <li>Fer esport</li>
+            <li>Escoltar música</li>
+            
+            <audio controls>
+                <source src="amari.mp3" type="audio/mpeg" />
+                <a href="amari.mp3">Download the music</a>
+                Your browser does not support the audio element.
+            </audio>
+
+            <li>Sortir amb els amics</li>
+            <li>Anar a la muntanya</li>
+        </ul>
+    </article>
+    
+    <form action="http://httpbin.org/post" method="post">
+        <!-- Pregunta sobre si fa esport -->
+        <h2>Practiques algun esport?</h2>
+        <input type="radio" id="esport-si" name="esport" value="si" onclick="showSportDetails(true)">
+        <label for="esport-si">Sí</label><br>
+        <input type="radio" id="esport-no" name="esport" value="no" onclick="showSportDetails(false)">
+        <label for="esport-no">No</label><br>
+        
+        <!-- Detalls sobre l'esport, ocults fins que es selecciona "Sí" -->
+        <div id="sport-details" style="display:none;">
+            <h2>Detalls sobre l'esport</h2>
+            
+            <!-- Tipus d'esport -->
+            <label for="tipus-esport">Quin esport practiques?</label><br>
+            <input type="text" id="tipus-esport" name="tipus_esport" placeholder="Especifica l'esport"><br><br>
+
+            <!-- Freqüència de pràctica -->
+            <label for="frequencia">Amb quina freqüència practiques aquest esport?</label><br>
+            <select id="frequencia" name="frequencia">
+                <option value="diari">Diari</option>
+                <option value="semi-diari">3/4 dies a la setmana</option>
+                <option value="setmanal">1/2 cops a la setmana</option>
+                <option value="ocasional">Ocasional</option>
+            </select><br><br>
+
+            <!-- Des de quan practica -->
+            <label for="anys">Des de quan practiques aquest esport?</label><br>
+            <input type="number" id="anys" name="anys" min="0" placeholder="Nombre d'anys"><br><br>
+
+            <!-- Intensitat de la pràctica -->
+            <label for="intensitat">Com qualificaries la intensitat de la teva pràctica?</label><br>
+            <input type="radio" id="baixa" name="intensitat" value="baixa">
+            <label for="baixa">Baixa</label><br>
+            <input type="radio" id="moderada" name="intensitat" value="moderada">
+            <label for="moderada">Moderada</label><br>
+            <input type="radio" id="alta" name="intensitat" value="alta">
+            <label for="alta">Alta</label><br><br>
+        </div>
+
+        <!-- Botons d'acció -->
+        <input type="button" onclick="alert('Si us plau, omple el formulari complet.')" value="Ajuda">
+        <input type="reset" value="Reiniciar">
+        <input type="submit" value="Enviar">
+    </form>
+
+    <script>
+        // Funció per mostrar o ocultar els detalls de l'esport
+        function showSportDetails(show) {
+            const details = document.getElementById('sport-details');
+            if (show) {
+                details.style.display = 'block';
+            } else {
+                details.style.display = 'none';
+            }
+        }
+    </script>
+        
+    <aside>
+
+    </aside>
+    <footer>
+
+    </footer>
+</body>
+</html>
+
+
+<!-- A la sessió 1 també vídeo i àudio -->
+<!-- Per la sessió 2 posar un formulari (a part del css). URL del formulari: http://httpbin.org/post (Usar place holder) -->
